@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6806516516F09E25006D0C12 /* HiScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6806516416F09E25006D0C12 /* HiScoreViewController.m */; };
+		6806516D16F0AA30006D0C12 /* scores.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6806516C16F0AA30006D0C12 /* scores.plist */; };
+		6806516F16F0B152006D0C12 /* scores_bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6806516E16F0B152006D0C12 /* scores_bkg.png */; };
+		681B3E8816F26BF7009DF1F2 /* banjo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 681B3E8716F26BF7009DF1F2 /* banjo.mp3 */; };
+		681B3E8B16F26C97009DF1F2 /* goodbadugly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 681B3E8916F26C97009DF1F2 /* goodbadugly.mp3 */; };
+		681B3E8C16F26C97009DF1F2 /* gunShot2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 681B3E8A16F26C97009DF1F2 /* gunShot2.wav */; };
+		681B3E8E16F26D55009DF1F2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 681B3E8D16F26D55009DF1F2 /* icon.png */; };
+		681B3E9016F26D64009DF1F2 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681B3E8F16F26D64009DF1F2 /* icon@2x.png */; };
+		681B3E9216F26E2B009DF1F2 /* navbar_bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = 681B3E9116F26E2B009DF1F2 /* navbar_bkg.png */; };
+		6835309516E91D8A00DFA87F /* mj.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6835309416E91D8A00DFA87F /* mj.plist */; };
+		688470C216E9E06D00B60BD7 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 688470C116E9E06D00B60BD7 /* Word.m */; };
+		688470C516E9E09200B60BD7 /* WordBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 688470C416E9E09200B60BD7 /* WordBoard.m */; };
+		6892D44816EFB6AE00DC1B75 /* Rawhide WF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB98616E8F33900B91386 /* Rawhide WF.ttf */; };
+		6892D44E16EFC4BA00DC1B75 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6892D44D16EFC4BA00DC1B75 /* Default.png */; };
+		6892D45016EFC4D100DC1B75 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6892D44F16EFC4D100DC1B75 /* Default@2x.png */; };
+		6892D45416EFCAB600DC1B75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6892D45316EFCAB600DC1B75 /* AVFoundation.framework */; };
+		6892D45616EFCBA800DC1B75 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6892D45516EFCBA800DC1B75 /* AudioToolbox.framework */; };
+		689C660C16F117F000D72B2F /* AddScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689C660B16F117F000D72B2F /* AddScoreViewController.m */; };
+		68A2F78816E9F72A00F75615 /* hang0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A2F77D16E9F72900F75615 /* hang0.gif */; };
+		68A2F78916E9F72A00F75615 /* hang1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A2F77E16E9F72900F75615 /* hang1.gif */; };
+		68A2F78A16E9F72A00F75615 /* hang2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A2F77F16E9F72900F75615 /* hang2.gif */; };
+		68A2F78B16E9F72A00F75615 /* hang3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A2F78016E9F72900F75615 /* hang3.gif */; };
+		68A2F78C16E9F72A00F75615 /* hang4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A2F78116E9F72900F75615 /* hang4.gif */; };
+		68A2F78D16E9F72A00F75615 /* hang5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A2F78216E9F72900F75615 /* hang5.gif */; };
+		68A2F78E16E9F72A00F75615 /* hang6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A2F78316E9F72900F75615 /* hang6.gif */; };
+		68A2F78F16E9F72A00F75615 /* hang7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A2F78416E9F72900F75615 /* hang7.gif */; };
+		68A2F79016E9F72A00F75615 /* hang8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A2F78516E9F72A00F75615 /* hang8.gif */; };
+		68A2F79116E9F72A00F75615 /* hang9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A2F78616E9F72A00F75615 /* hang9.gif */; };
+		68A2F79216E9F72A00F75615 /* hang10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A2F78716E9F72A00F75615 /* hang10.gif */; };
+		68A5552216EE7F8700C39971 /* home_bkg@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A5552116EE7F8700C39971 /* home_bkg@2x.gif */; };
+		68A5552516EE800800C39971 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A5552416EE800800C39971 /* HomeViewController.m */; };
+		68A5552716EE85C000C39971 /* home_bkg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A5552616EE85C000C39971 /* home_bkg.gif */; };
+		68A5552A16EE87B600C39971 /* general_bkg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A5552816EE87B600C39971 /* general_bkg.gif */; };
+		68A5552B16EE87B600C39971 /* general_bkg@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 68A5552916EE87B600C39971 /* general_bkg@2x.gif */; };
+		68A5552C16EE8D2300C39971 /* shelldrake_wf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB98416E8F1B300B91386 /* shelldrake_wf.ttf */; };
+		68A5552D16EE90F700C39971 /* clifford_eight_wf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB98516E8F33900B91386 /* clifford_eight_wf.ttf */; };
+		68CCA11616EF5626001516D7 /* iOS Hangman Wild West-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68CCA11516EF5626001516D7 /* iOS Hangman Wild West-Info.plist */; };
+		68CFB95316E8EE1800B91386 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB95216E8EE1800B91386 /* UIKit.framework */; };
+		68CFB95516E8EE1800B91386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB95416E8EE1800B91386 /* Foundation.framework */; };
+		68CFB95716E8EE1800B91386 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB95616E8EE1800B91386 /* CoreGraphics.framework */; };
+		68CFB95D16E8EE1800B91386 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB95B16E8EE1800B91386 /* InfoPlist.strings */; };
+		68CFB95F16E8EE1800B91386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB95E16E8EE1800B91386 /* main.m */; };
+		68CFB96316E8EE1800B91386 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB96216E8EE1800B91386 /* AppDelegate.m */; };
+		68CFB96516E8EE1800B91386 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB96416E8EE1800B91386 /* Default.png */; };
+		68CFB96716E8EE1800B91386 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB96616E8EE1800B91386 /* Default@2x.png */; };
+		68CFB96916E8EE1800B91386 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB96816E8EE1800B91386 /* Default-568h@2x.png */; };
+		68CFB96C16E8EE1800B91386 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB96A16E8EE1800B91386 /* MainStoryboard.storyboard */; };
+		68CFB97116E8EE1800B91386 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB97016E8EE1800B91386 /* first.png */; };
+		68CFB97316E8EE1800B91386 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB97216E8EE1800B91386 /* first@2x.png */; };
+		68CFB97816E8EE1800B91386 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB97716E8EE1800B91386 /* second.png */; };
+		68CFB97A16E8EE1800B91386 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB97916E8EE1800B91386 /* second@2x.png */; };
+		68CFB98916E8FB2800B91386 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB98816E8FB2800B91386 /* GameViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6806516316F09E25006D0C12 /* HiScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiScoreViewController.h; sourceTree = "<group>"; };
+		6806516416F09E25006D0C12 /* HiScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiScoreViewController.m; sourceTree = "<group>"; };
+		6806516C16F0AA30006D0C12 /* scores.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = scores.plist; sourceTree = SOURCE_ROOT; };
+		6806516E16F0B152006D0C12 /* scores_bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scores_bkg.png; path = "iOS Hangman Wild West/scores_bkg.png"; sourceTree = "<group>"; };
+		681B3E8716F26BF7009DF1F2 /* banjo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banjo.mp3; sourceTree = "<group>"; };
+		681B3E8916F26C97009DF1F2 /* goodbadugly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = goodbadugly.mp3; sourceTree = "<group>"; };
+		681B3E8A16F26C97009DF1F2 /* gunShot2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gunShot2.wav; sourceTree = "<group>"; };
+		681B3E8D16F26D55009DF1F2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		681B3E8F16F26D64009DF1F2 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		681B3E9116F26E2B009DF1F2 /* navbar_bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbar_bkg.png; sourceTree = "<group>"; };
+		6835309416E91D8A00DFA87F /* mj.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mj.plist; sourceTree = "<group>"; };
+		688470C016E9E06D00B60BD7 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		688470C116E9E06D00B60BD7 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		688470C316E9E09200B60BD7 /* WordBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordBoard.h; path = "iOS Hangman Wild West/WordBoard.h"; sourceTree = "<group>"; };
+		688470C416E9E09200B60BD7 /* WordBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordBoard.m; path = "iOS Hangman Wild West/WordBoard.m"; sourceTree = "<group>"; };
+		6892D44D16EFC4BA00DC1B75 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6892D44F16EFC4D100DC1B75 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6892D45316EFCAB600DC1B75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6892D45516EFCBA800DC1B75 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		689C660A16F117F000D72B2F /* AddScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddScoreViewController.h; sourceTree = "<group>"; };
+		689C660B16F117F000D72B2F /* AddScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddScoreViewController.m; sourceTree = "<group>"; };
+		68A2F77D16E9F72900F75615 /* hang0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hang0.gif; path = "iOS Hangman Wild West/hang0.gif"; sourceTree = "<group>"; };
+		68A2F77E16E9F72900F75615 /* hang1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hang1.gif; path = "iOS Hangman Wild West/hang1.gif"; sourceTree = "<group>"; };
+		68A2F77F16E9F72900F75615 /* hang2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hang2.gif; path = "iOS Hangman Wild West/hang2.gif"; sourceTree = "<group>"; };
+		68A2F78016E9F72900F75615 /* hang3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hang3.gif; path = "iOS Hangman Wild West/hang3.gif"; sourceTree = "<group>"; };
+		68A2F78116E9F72900F75615 /* hang4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hang4.gif; path = "iOS Hangman Wild West/hang4.gif"; sourceTree = "<group>"; };
+		68A2F78216E9F72900F75615 /* hang5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hang5.gif; path = "iOS Hangman Wild West/hang5.gif"; sourceTree = "<group>"; };
+		68A2F78316E9F72900F75615 /* hang6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hang6.gif; path = "iOS Hangman Wild West/hang6.gif"; sourceTree = "<group>"; };
+		68A2F78416E9F72900F75615 /* hang7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hang7.gif; path = "iOS Hangman Wild West/hang7.gif"; sourceTree = "<group>"; };
+		68A2F78516E9F72A00F75615 /* hang8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hang8.gif; path = "iOS Hangman Wild West/hang8.gif"; sourceTree = "<group>"; };
+		68A2F78616E9F72A00F75615 /* hang9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hang9.gif; path = "iOS Hangman Wild West/hang9.gif"; sourceTree = "<group>"; };
+		68A2F78716E9F72A00F75615 /* hang10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hang10.gif; path = "iOS Hangman Wild West/hang10.gif"; sourceTree = "<group>"; };
+		68A5552116EE7F8700C39971 /* home_bkg@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "home_bkg@2x.gif"; path = "iOS Hangman Wild West/home_bkg@2x.gif"; sourceTree = "<group>"; };
+		68A5552316EE800800C39971 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = "iOS Hangman Wild West/HomeViewController.h"; sourceTree = "<group>"; };
+		68A5552416EE800800C39971 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = "iOS Hangman Wild West/HomeViewController.m"; sourceTree = "<group>"; };
+		68A5552616EE85C000C39971 /* home_bkg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = home_bkg.gif; path = "iOS Hangman Wild West/home_bkg.gif"; sourceTree = "<group>"; };
+		68A5552816EE87B600C39971 /* general_bkg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = general_bkg.gif; path = "iOS Hangman Wild West/general_bkg.gif"; sourceTree = "<group>"; };
+		68A5552916EE87B600C39971 /* general_bkg@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "general_bkg@2x.gif"; path = "iOS Hangman Wild West/general_bkg@2x.gif"; sourceTree = "<group>"; };
+		68CCA11516EF5626001516D7 /* iOS Hangman Wild West-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOS Hangman Wild West-Info.plist"; sourceTree = "<group>"; };
+		68CFB94F16E8EE1800B91386 /* iOS Hangman Wild West.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Hangman Wild West.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CFB95216E8EE1800B91386 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		68CFB95416E8EE1800B91386 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68CFB95616E8EE1800B91386 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68CFB95C16E8EE1800B91386 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68CFB95E16E8EE1800B91386 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68CFB96016E8EE1800B91386 /* iOS Hangman Wild West-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS Hangman Wild West-Prefix.pch"; sourceTree = "<group>"; };
+		68CFB96116E8EE1800B91386 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "iOS Hangman Wild West/AppDelegate.h"; sourceTree = "<group>"; };
+		68CFB96216E8EE1800B91386 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "iOS Hangman Wild West/AppDelegate.m"; sourceTree = "<group>"; };
+		68CFB96416E8EE1800B91386 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "iOS Hangman Wild West/Default.png"; sourceTree = "<group>"; };
+		68CFB96616E8EE1800B91386 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "iOS Hangman Wild West/Default@2x.png"; sourceTree = "<group>"; };
+		68CFB96816E8EE1800B91386 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "iOS Hangman Wild West/Default-568h@2x.png"; sourceTree = "<group>"; };
+		68CFB96B16E8EE1800B91386 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		68CFB97016E8EE1800B91386 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = "iOS Hangman Wild West/first.png"; sourceTree = "<group>"; };
+		68CFB97216E8EE1800B91386 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "iOS Hangman Wild West/first@2x.png"; sourceTree = "<group>"; };
+		68CFB97716E8EE1800B91386 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = "iOS Hangman Wild West/second.png"; sourceTree = "<group>"; };
+		68CFB97916E8EE1800B91386 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "iOS Hangman Wild West/second@2x.png"; sourceTree = "<group>"; };
+		68CFB98416E8F1B300B91386 /* shelldrake_wf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = shelldrake_wf.ttf; sourceTree = "<group>"; };
+		68CFB98516E8F33900B91386 /* clifford_eight_wf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = clifford_eight_wf.ttf; sourceTree = "<group>"; };
+		68CFB98616E8F33900B91386 /* Rawhide WF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rawhide WF.ttf"; sourceTree = "<group>"; };
+		68CFB98716E8FB2800B91386 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = "iOS Hangman Wild West/GameViewController.h"; sourceTree = "<group>"; };
+		68CFB98816E8FB2800B91386 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = "iOS Hangman Wild West/GameViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68CFB94C16E8EE1800B91386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6892D45616EFCBA800DC1B75 /* AudioToolbox.framework in Frameworks */,
+				6892D45416EFCAB600DC1B75 /* AVFoundation.framework in Frameworks */,
+				68CFB95316E8EE1800B91386 /* UIKit.framework in Frameworks */,
+				68CFB95516E8EE1800B91386 /* Foundation.framework in Frameworks */,
+				68CFB95716E8EE1800B91386 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6884914716F212580027F24E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				689C660A16F117F000D72B2F /* AddScoreViewController.h */,
+				689C660B16F117F000D72B2F /* AddScoreViewController.m */,
+				6806516316F09E25006D0C12 /* HiScoreViewController.h */,
+				6806516416F09E25006D0C12 /* HiScoreViewController.m */,
+				68A5552316EE800800C39971 /* HomeViewController.h */,
+				68A5552416EE800800C39971 /* HomeViewController.m */,
+				68CFB98716E8FB2800B91386 /* GameViewController.h */,
+				68CFB98816E8FB2800B91386 /* GameViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6884914816F212A50027F24E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6806516E16F0B152006D0C12 /* scores_bkg.png */,
+				68A5552916EE87B600C39971 /* general_bkg@2x.gif */,
+				68A5552616EE85C000C39971 /* home_bkg.gif */,
+				68A5552116EE7F8700C39971 /* home_bkg@2x.gif */,
+				68A2F77D16E9F72900F75615 /* hang0.gif */,
+				68A2F77E16E9F72900F75615 /* hang1.gif */,
+				68A2F77F16E9F72900F75615 /* hang2.gif */,
+				68A2F78016E9F72900F75615 /* hang3.gif */,
+				68A2F78116E9F72900F75615 /* hang4.gif */,
+				68A2F78216E9F72900F75615 /* hang5.gif */,
+				68A2F78316E9F72900F75615 /* hang6.gif */,
+				68A2F78416E9F72900F75615 /* hang7.gif */,
+				68A2F78516E9F72A00F75615 /* hang8.gif */,
+				68A2F78616E9F72A00F75615 /* hang9.gif */,
+				68A2F78716E9F72A00F75615 /* hang10.gif */,
+				68CFB97016E8EE1800B91386 /* first.png */,
+				68CFB97216E8EE1800B91386 /* first@2x.png */,
+				68CFB97716E8EE1800B91386 /* second.png */,
+				68CFB97916E8EE1800B91386 /* second@2x.png */,
+				6892D44F16EFC4D100DC1B75 /* Default@2x.png */,
+				6892D44D16EFC4BA00DC1B75 /* Default.png */,
+				681B3E9116F26E2B009DF1F2 /* navbar_bkg.png */,
+				68A5552816EE87B600C39971 /* general_bkg.gif */,
+				68CFB96416E8EE1800B91386 /* Default.png */,
+				68CFB96616E8EE1800B91386 /* Default@2x.png */,
+				68CFB96816E8EE1800B91386 /* Default-568h@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		6884914A16F212E20027F24E /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				688470C016E9E06D00B60BD7 /* Word.h */,
+				688470C116E9E06D00B60BD7 /* Word.m */,
+				688470C316E9E09200B60BD7 /* WordBoard.h */,
+				688470C416E9E09200B60BD7 /* WordBoard.m */,
+				68CFB96116E8EE1800B91386 /* AppDelegate.h */,
+				68CFB96216E8EE1800B91386 /* AppDelegate.m */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		6884914B16F213480027F24E /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				681B3E8916F26C97009DF1F2 /* goodbadugly.mp3 */,
+				681B3E8A16F26C97009DF1F2 /* gunShot2.wav */,
+				681B3E8716F26BF7009DF1F2 /* banjo.mp3 */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		68CFB94616E8EE1800B91386 = {
+			isa = PBXGroup;
+			children = (
+				681B3E8F16F26D64009DF1F2 /* icon@2x.png */,
+				681B3E8D16F26D55009DF1F2 /* icon.png */,
+				6884914B16F213480027F24E /* sounds */,
+				6884914A16F212E20027F24E /* classes */,
+				6884914716F212580027F24E /* ViewControllers */,
+				6884914816F212A50027F24E /* images */,
+				68CFB95816E8EE1800B91386 /* iOS Hangman Wild West */,
+				68CFB95116E8EE1800B91386 /* Frameworks */,
+				68CFB95016E8EE1800B91386 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68CFB95016E8EE1800B91386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68CFB94F16E8EE1800B91386 /* iOS Hangman Wild West.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68CFB95116E8EE1800B91386 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6892D45516EFCBA800DC1B75 /* AudioToolbox.framework */,
+				6892D45316EFCAB600DC1B75 /* AVFoundation.framework */,
+				68CFB95216E8EE1800B91386 /* UIKit.framework */,
+				68CFB95416E8EE1800B91386 /* Foundation.framework */,
+				68CFB95616E8EE1800B91386 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68CFB95816E8EE1800B91386 /* iOS Hangman Wild West */ = {
+			isa = PBXGroup;
+			children = (
+				68CFB96A16E8EE1800B91386 /* MainStoryboard.storyboard */,
+				68CFB95916E8EE1800B91386 /* Supporting Files */,
+			);
+			path = "iOS Hangman Wild West";
+			sourceTree = "<group>";
+		};
+		68CFB95916E8EE1800B91386 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68CFB95E16E8EE1800B91386 /* main.m */,
+				6806516C16F0AA30006D0C12 /* scores.plist */,
+				68CCA11516EF5626001516D7 /* iOS Hangman Wild West-Info.plist */,
+				6835309416E91D8A00DFA87F /* mj.plist */,
+				68CFB98516E8F33900B91386 /* clifford_eight_wf.ttf */,
+				68CFB98616E8F33900B91386 /* Rawhide WF.ttf */,
+				68CFB98416E8F1B300B91386 /* shelldrake_wf.ttf */,
+				68CFB95B16E8EE1800B91386 /* InfoPlist.strings */,
+				68CFB96016E8EE1800B91386 /* iOS Hangman Wild West-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68CFB94E16E8EE1800B91386 /* iOS Hangman Wild West */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CFB97D16E8EE1800B91386 /* Build configuration list for PBXNativeTarget "iOS Hangman Wild West" */;
+			buildPhases = (
+				68CFB94B16E8EE1800B91386 /* Sources */,
+				68CFB94C16E8EE1800B91386 /* Frameworks */,
+				68CFB94D16E8EE1800B91386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Hangman Wild West";
+			productName = "iOS Hangman Wild West";
+			productReference = 68CFB94F16E8EE1800B91386 /* iOS Hangman Wild West.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68CFB94716E8EE1800B91386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "MJ O'CARROLL";
+			};
+			buildConfigurationList = 68CFB94A16E8EE1800B91386 /* Build configuration list for PBXProject "iOS Hangman Wild West" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 68CFB94616E8EE1800B91386;
+			productRefGroup = 68CFB95016E8EE1800B91386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68CFB94E16E8EE1800B91386 /* iOS Hangman Wild West */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68CFB94D16E8EE1800B91386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6892D44816EFB6AE00DC1B75 /* Rawhide WF.ttf in Resources */,
+				68A5552D16EE90F700C39971 /* clifford_eight_wf.ttf in Resources */,
+				68A5552C16EE8D2300C39971 /* shelldrake_wf.ttf in Resources */,
+				68CFB95D16E8EE1800B91386 /* InfoPlist.strings in Resources */,
+				68CFB96516E8EE1800B91386 /* Default.png in Resources */,
+				68CFB96716E8EE1800B91386 /* Default@2x.png in Resources */,
+				68CFB96916E8EE1800B91386 /* Default-568h@2x.png in Resources */,
+				68CFB96C16E8EE1800B91386 /* MainStoryboard.storyboard in Resources */,
+				68CFB97116E8EE1800B91386 /* first.png in Resources */,
+				68CFB97316E8EE1800B91386 /* first@2x.png in Resources */,
+				68CFB97816E8EE1800B91386 /* second.png in Resources */,
+				68CFB97A16E8EE1800B91386 /* second@2x.png in Resources */,
+				6835309516E91D8A00DFA87F /* mj.plist in Resources */,
+				68A2F78816E9F72A00F75615 /* hang0.gif in Resources */,
+				68A2F78916E9F72A00F75615 /* hang1.gif in Resources */,
+				68A2F78A16E9F72A00F75615 /* hang2.gif in Resources */,
+				68A2F78B16E9F72A00F75615 /* hang3.gif in Resources */,
+				68A2F78C16E9F72A00F75615 /* hang4.gif in Resources */,
+				68A2F78D16E9F72A00F75615 /* hang5.gif in Resources */,
+				68A2F78E16E9F72A00F75615 /* hang6.gif in Resources */,
+				68A2F78F16E9F72A00F75615 /* hang7.gif in Resources */,
+				68A2F79016E9F72A00F75615 /* hang8.gif in Resources */,
+				68A2F79116E9F72A00F75615 /* hang9.gif in Resources */,
+				68A2F79216E9F72A00F75615 /* hang10.gif in Resources */,
+				68A5552216EE7F8700C39971 /* home_bkg@2x.gif in Resources */,
+				68A5552716EE85C000C39971 /* home_bkg.gif in Resources */,
+				68A5552A16EE87B600C39971 /* general_bkg.gif in Resources */,
+				68A5552B16EE87B600C39971 /* general_bkg@2x.gif in Resources */,
+				68CCA11616EF5626001516D7 /* iOS Hangman Wild West-Info.plist in Resources */,
+				6892D44E16EFC4BA00DC1B75 /* Default.png in Resources */,
+				6892D45016EFC4D100DC1B75 /* Default@2x.png in Resources */,
+				6806516D16F0AA30006D0C12 /* scores.plist in Resources */,
+				6806516F16F0B152006D0C12 /* scores_bkg.png in Resources */,
+				681B3E8816F26BF7009DF1F2 /* banjo.mp3 in Resources */,
+				681B3E8B16F26C97009DF1F2 /* goodbadugly.mp3 in Resources */,
+				681B3E8C16F26C97009DF1F2 /* gunShot2.wav in Resources */,
+				681B3E8E16F26D55009DF1F2 /* icon.png in Resources */,
+				681B3E9016F26D64009DF1F2 /* icon@2x.png in Resources */,
+				681B3E9216F26E2B009DF1F2 /* navbar_bkg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68CFB94B16E8EE1800B91386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CFB95F16E8EE1800B91386 /* main.m in Sources */,
+				68CFB96316E8EE1800B91386 /* AppDelegate.m in Sources */,
+				68CFB98916E8FB2800B91386 /* GameViewController.m in Sources */,
+				688470C216E9E06D00B60BD7 /* Word.m in Sources */,
+				688470C516E9E09200B60BD7 /* WordBoard.m in Sources */,
+				68A5552516EE800800C39971 /* HomeViewController.m in Sources */,
+				6806516516F09E25006D0C12 /* HiScoreViewController.m in Sources */,
+				689C660C16F117F000D72B2F /* AddScoreViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68CFB95B16E8EE1800B91386 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CFB95C16E8EE1800B91386 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		68CFB96A16E8EE1800B91386 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CFB96B16E8EE1800B91386 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68CFB97B16E8EE1800B91386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68CFB97C16E8EE1800B91386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68CFB97E16E8EE1800B91386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Hangman Wild West/iOS Hangman Wild West-Prefix.pch";
+				INFOPLIST_FILE = "iOS Hangman Wild West/iOS Hangman Wild West-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		68CFB97F16E8EE1800B91386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphoneos6.1]" = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Hangman Wild West/iOS Hangman Wild West-Prefix.pch";
+				INFOPLIST_FILE = "iOS Hangman Wild West/iOS Hangman Wild West-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68CFB94A16E8EE1800B91386 /* Build configuration list for PBXProject "iOS Hangman Wild West" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CFB97B16E8EE1800B91386 /* Debug */,
+				68CFB97C16E8EE1800B91386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68CFB97D16E8EE1800B91386 /* Build configuration list for PBXNativeTarget "iOS Hangman Wild West" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CFB97E16E8EE1800B91386 /* Debug */,
+				68CFB97F16E8EE1800B91386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68CFB94716E8EE1800B91386 /* Project object */;
+}
